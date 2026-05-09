@@ -1,0 +1,72 @@
+\begin{table}[ht]
+\centering
+\small
+\caption{Robustness of the refresh rule under multiplicative noise in \(T_{\mathrm{ES}}\). For each experiment, we perturb the estimated horizon as \(T'=T_{\mathrm{ES}}(1+\epsilon)\), with \(\epsilon\sim\mathcal{N}(0,\sigma)\), and select the closest grid beta induced by the refresh rule. For each \(\sigma>0\), results are averaged over 20 perturbations per experiment.}
+\label{tab:refresh-noise-robustness}
+\setlength{\tabcolsep}{5pt}
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}lcccccccccc}
+\toprule
+& \multicolumn{3}{c}{Development} 
+& \multicolumn{3}{c}{Held-out} 
+& \multicolumn{3}{c}{Global}
+& \\
+\cmidrule(lr){2-4}
+\cmidrule(lr){5-7}
+\cmidrule(lr){8-10}
+Method 
+& Mean & Max & CVaR 
+& Mean & Max & CVaR 
+& Mean & Max & CVaR 
+& Gap \(<1\%\) \\
+\midrule
+Fixed \(\beta=0.944\)
+& 0.264 & 1.328 & 1.055
+& 0.359 & 1.067 & 1.067
+& 0.290 & 1.328 & 1.059
+& 81.82\% \\
+
+\(\sigma=0\)
+& 0.406 & 0.885 & 0.811
+& 0.041 & 0.124 & 0.124
+& 0.307 & 0.885 & 0.713
+& 100.00\% \\
+
+\(\sigma=0.03\)
+& 0.430 & 1.156 & 0.864
+& 0.041 & 0.124 & 0.124
+& 0.324 & 1.156 & 0.789
+& 97.73\% \\
+
+\(\sigma=0.06\)
+& 0.439 & 1.156 & 0.885
+& 0.041 & 0.124 & 0.124
+& 0.331 & 1.156 & 0.812
+& 96.82\% \\
+
+\(\sigma=0.10\)
+& 0.443 & 1.156 & 0.895
+& 0.041 & 0.124 & 0.124
+& 0.333 & 1.156 & 0.824
+& 96.36\% \\
+
+\(\sigma=0.15\)
+& 0.454 & 1.156 & 0.926
+& 0.184 & 1.544 & 0.644
+& 0.380 & 1.544 & 0.946
+& 92.27\% \\
+
+\(\sigma=0.20\)
+& 0.461 & 1.369 & 0.975
+& 0.294 & 1.544 & 1.053
+& 0.415 & 1.544 & 1.035
+& 89.09\% \\
+
+\(\sigma=0.25\)
+& 0.521 & 3.772 & 1.155
+& 0.276 & 1.544 & 1.003
+& 0.454 & 3.772 & 1.169
+& 86.82\% \\
+
+\bottomrule
+\end{tabular*}
+\end{table}

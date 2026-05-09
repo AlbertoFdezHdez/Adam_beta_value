@@ -1,0 +1,12 @@
+split	model	dataset	script	batch_size	total_steps_or_epochs	optimizer	notes
+development	ResNet50	Food-101	experiments/resnet50_food101.py	128	50 epochs	AdamW	random init, eval once per epoch
+development	ResNet50	ImageNet100	experiments/resnet50_imagenet100.py	128	80 epochs	AdamW	random init, eval once per epoch
+development	ViT-B/16	CIFAR-100	experiments/vitb16_cifar100.py	128	50 epochs	AdamW	random init, eval once per epoch
+development	ViT-B/16	TinyImageNet	experiments/vitb16_tinyimagenet.py	128	50 epochs	AdamW	random init, eval once per epoch
+development	NanoGPT	WikiText-103	experiments/nanogpt_wikitext.py	8	10000 steps	AdamW	random init, eval every 500 steps
+development	NanoGPT	OpenWebText	experiments/nanogpt_openwebtext.py	8	10000 steps	AdamW	random init, eval every 500 steps
+development	Llama60M	C4	experiments/llama60m_c4.py	64	10000 steps	Adam	random init, eval every 1000 steps
+development	Llama60M	SlimPajama-6B	experiments/llama60m_slimpajama6b.py	64	10000 steps	Adam	random init, eval every 1000 steps
+heldout	T5-small	BookCorpus	experiments/t5small_bookcorpus.py	8	10000 steps	AdamW	pretrained t5-small, seed 1 only in final analysis
+heldout	Swin-T	Caltech-256	experiments/swin_t_caltech256.py	64	60 epochs	AdamW	random init, eval once per epoch
+heldout	EfficientNet-B0	Stanford Cars	experiments/efficientnetb0_stanfordcars.py	64	100 epochs	Adam	random init, eval once per epoch

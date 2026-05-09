@@ -1,0 +1,12 @@
+exp	split	model	dataset	selected_beta	T_ES	lower_T_ES	upper_T_ES
+1	development	NanoGPT	WikiText-103	0.822	6000	4048	7199
+2	development	NanoGPT	OpenWebText	0.9	10000	7199	12802
+3	development	Llama60M	C4	0.9	10000	7199	12802
+4	development	Llama60M	SlimPajama	0.9	10000	7199	12802
+5	development	ViT-B/16	CIFAR-100	0.944	20000	12802	22766
+6	development	ViT-B/16	TinyImageNet	0.968	30000	22766	40486
+7	development	ResNet50	Food-101	0.968	30000	22766	40486
+8	development	ResNet50	ImageNet100	0.968	40000	22766	40486
+9	heldout	EfficientNet-B0	Cars	0.9	10000	7199	12802
+10	heldout	T5-small	BookCorpus	0.9	10000	7199	12802
+11	heldout	Swin-T	Caltech-256	0.944	20000	12802	22766

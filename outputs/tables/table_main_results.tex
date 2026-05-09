@@ -1,0 +1,36 @@
+\begin{table}[ht]
+\centering
+\small
+\caption{Relative gaps to the per-experiment oracle beta. The refresh rule \(R_0=1000\) selects one beta per experiment using \(T_{\mathrm{ES}}\). The development block contains the 8 experiments used to calibrate \(R_0\), while the held-out block contains the 3 remaining experiments.}
+\label{tab:main-results}
+\setlength{\tabcolsep}{5pt}
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}lcccccccccc}
+\toprule
+& \multicolumn{3}{c}{Development} 
+& \multicolumn{3}{c}{Held-out} 
+& \multicolumn{3}{c}{Global}
+& \\
+\cmidrule(lr){2-4}
+\cmidrule(lr){5-7}
+\cmidrule(lr){8-10}
+Method 
+& Mean & Max & CVaR 
+& Mean & Max & CVaR 
+& Mean & Max & CVaR 
+& Gap \(<1\%\) \\
+\midrule
+Fixed \(\beta=0.944\)
+& \textbf{0.264} & 1.328 & 1.055
+& 0.359 & 1.067 & 1.067
+& \textbf{0.290} & 1.328 & 1.059
+& 9/11 \\
+
+Refresh \(R_0=1000\)
+& 0.406 & \textbf{0.885} & \textbf{0.811}
+& \textbf{0.041} & \textbf{0.124} & \textbf{0.124}
+& 0.307 & \textbf{0.885} & \textbf{0.713}
+& \textbf{11/11} \\
+
+\bottomrule
+\end{tabular*}
+\end{table}

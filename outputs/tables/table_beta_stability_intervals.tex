@@ -1,0 +1,25 @@
+\begin{table}[ht]
+\centering
+\small
+\caption{Stability intervals of the beta selected by the refresh rule \(R_\beta=(1-\beta)T_{\mathrm{ES}}\approx1000\). For each experiment, \(T_{\mathrm{ES}}\) denotes the rounded horizon used by the rule, and the last two columns show the range of \(T_{\mathrm{ES}}\) values for which the selected grid beta remains unchanged.}
+\label{tab:beta-stability-intervals}
+\setlength{\tabcolsep}{4pt}
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}cllcccc}
+\toprule
+Exp. & Model & Dataset & selected \(\beta\) & \(T_{\mathrm{ES}}\) & lower \(T_{\mathrm{ES}}\) & upper \(T_{\mathrm{ES}}\) \\
+\midrule
+1 & NanoGPT & WikiText-103 & 0.822 & 6000 & 4048 & 7199 \\
+2 & NanoGPT & OpenWebText & 0.900 & 10000 & 7199 & 12802 \\
+3 & Llama60M & C4 & 0.900 & 10000 & 7199 & 12802 \\
+4 & Llama60M & SlimPajama & 0.900 & 10000 & 7199 & 12802 \\
+5 & ViT-B/16 & CIFAR-100 & 0.944 & 20000 & 12802 & 22766 \\
+6 & ViT-B/16 & TinyImageNet & 0.968 & 30000 & 22766 & 40486 \\
+7 & ResNet50 & Food-101 & 0.968 & 30000 & 22766 & 40486 \\
+8 & ResNet50 & ImageNet100 & 0.968 & 40000 & 22766 & 40486 \\
+\midrule
+9 & EfficientNet-B0 & Cars & 0.900 & 10000 & 7199 & 12802 \\
+10 & T5-small & BookCorpus & 0.900 & 10000 & 7199 & 12802 \\
+11 & Swin-T & Caltech-256 & 0.944 & 20000 & 12802 & 22766 \\
+\bottomrule
+\end{tabular*}
+\end{table}

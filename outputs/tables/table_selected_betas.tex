@@ -1,0 +1,25 @@
+\begin{table}[ht]
+\centering
+\small
+\caption{Beta values selected by the refresh rule \(R_\beta=(1-\beta)T_{\mathrm{ES}}\approx1000\). The first block contains the development experiments used to calibrate \(R_0\), and the second block contains held-out validation experiments; gaps are validation-loss gaps relative to the oracle \(\beta^\star\).}
+\label{tab:selected-betas}
+\setlength{\tabcolsep}{4pt}
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}cllcccc}
+\toprule
+Exp. & Model & Dataset & \(\beta^\star\) & \(T_{\mathrm{ES}}\) & selected \(\beta\) & gap (\%) \\
+\midrule
+1 & NanoGPT & WikiText-103 & 0.944 & 6000 & 0.822 & 0.515 \\
+2 & NanoGPT & OpenWebText & 0.944 & 10000 & 0.900 & 0.205 \\
+3 & Llama60M & C4 & 0.944 & 10000 & 0.900 & 0.202 \\
+4 & Llama60M & SlimPajama & 0.944 & 10000 & 0.900 & 0.299 \\
+5 & ViT-B/16 & CIFAR-100 & 0.944 & 20000 & 0.944 & 0.000 \\
+6 & ViT-B/16 & TinyImageNet & 0.944 & 30000 & 0.968 & 0.738 \\
+7 & ResNet50 & Food-101 & 0.990 & 30000 & 0.968 & 0.885 \\
+8 & ResNet50 & ImageNet100 & 0.994 & 40000 & 0.968 & 0.408 \\
+\midrule
+9 & EfficientNet-B0 & Cars & 0.900 & 10000 & 0.900 & 0.000 \\
+10 & T5-small & BookCorpus & 0.982 & 10000 & 0.900 & 0.124 \\
+11 & Swin-T & Caltech-256 & 0.944 & 20000 & 0.944 & 0.000 \\
+\bottomrule
+\end{tabular*}
+\end{table}
